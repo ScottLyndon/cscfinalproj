@@ -21,8 +21,21 @@ MODEL_CONFIG = {
     "input_size": 640,
     "confidence_threshold": 0.5,
     "iou_threshold": 0.45,
-    "classes": ["person"],
-    "num_classes": 1,
+    "classes": [
+        "awning-tricycle",
+        "bicycle",
+        "bus",
+        "car",
+        "ignored regions",
+        "motor",
+        "others",
+        "pedestrian",
+        "people",
+        "tricycle",
+        "truck",
+        "van"
+    ],
+    "num_classes": 12,
 }
 
 # UI Configuration
@@ -42,7 +55,18 @@ VIDEO_CONFIG = {
 
 # Color map for classes (BGR format for OpenCV)
 CLASS_COLORS = {
-    "person": (0, 255, 0),  # Green
+    "awning-tricycle": (255, 0, 0),      # Blue
+    "bicycle": (0, 255, 0),              # Green
+    "bus": (0, 0, 255),                  # Red
+    "car": (255, 255, 0),                # Cyan
+    "ignored regions": (128, 128, 128),  # Gray
+    "motor": (255, 0, 255),              # Magenta
+    "others": (0, 255, 255),             # Yellow
+    "pedestrian": (0, 165, 255),         # Orange
+    "people": (0, 255, 0),               # Green
+    "tricycle": (255, 192, 203),         # Pink
+    "truck": (128, 0, 128),              # Purple
+    "van": (0, 128, 255),                # Dark Orange
 }
 
 # Default settings
